@@ -26,10 +26,84 @@
             "args": [
                 "-std=c++11",
                 "-stdlib=libc++",
-                "03_event_driven_programming.cpp",
+                "03_event_driven_programming/03_event_driven_programming.cpp",
                 "-I/usr/local/include",
                 "-L/usr/local/lib",
                 "-lSDL2",
+                "-g"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "taskName": "build project 04",
+            "type": "shell",
+            "command": "clang++",
+            "args": [
+                "-std=c++11",
+                "-stdlib=libc++",
+                "04_key_presses/04_key_presses.cpp",
+                "-I/usr/local/include",
+                "-L/usr/local/lib",
+                "-lSDL2",
+                "-g"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "taskName": "build project 05",
+            "type": "shell",
+            "command": "clang++",
+            "args": [
+                "-std=c++11",
+                "-stdlib=libc++",
+                "05_optimized_surface_loading_and_soft_stretching/05_optimized_surface_loading_and_soft_stretching.cpp",
+                "-I/usr/local/include",
+                "-L/usr/local/lib",
+                "-lSDL2",
+                "-g"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "taskName": "build project 06",
+            "type": "shell",
+            "command": "clang++",
+            "args": [
+                "-std=c++11",
+                "-stdlib=libc++",
+                "06_extension_libraries_and_loading_other_image_formats/06_extension_libraries_and_loading_other_image_formats.cpp",
+                "-I/usr/local/include",
+                "-L/usr/local/lib",
+                "-lSDL2",
+                "-lSDL2_image",
+                "-g"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "taskName": "build project 07",
+            "type": "shell",
+            "command": "clang++",
+            "args": [
+                "-std=c++11",
+                "-stdlib=libc++",
+                "07_texture_loading_and_rendering/07_texture_loading_and_rendering.cpp",
+                "-I/usr/local/include",
+                "-L/usr/local/lib",
+                "-lSDL2",
+                "-lSDL2_image",
                 "-g"
             ],
             "group": {
